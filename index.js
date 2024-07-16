@@ -49,22 +49,50 @@
 
 // console.log("A">"a")
 
+// let user2 = {
+    //     name: "Rohan",
+    //     age: 22,
+    //     func: function(){
+        //         console.log(this.name,this.age)
+        //         return age
+        //     }
+        // }
+        
+        // let dup = user.func
+        
+        // dup.call(this)
+        
+        
+        
+        
+        // Object.defineProperty(user,'func',{
+            
+        //     writable: false,
+        //     enumerable: false
+        
+        // })
+        
+        // user2.func.call(user)
+        
+        
+let age = 22
+let user = {
+    name: "Rohith",
+    age: 21,
+    con: this,
+    func: function(){
+        function name(){
+            console.log(this.name,this.age)
+        }
+        console.log(this)
+        console.log(this.con)
+        name()
+    }
+
+ 
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+user.func()
 
 
